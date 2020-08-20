@@ -1,0 +1,201 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.header1{
+    padding: 60px;
+    text-align: center;
+    background: url('image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    
+}
+
+.navbar{
+    color: white;
+    background: black;
+    display: flex;
+    padding: 5px 10px;
+    
+   
+}
+
+.navbar a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+   
+   
+}
+
+.navbar a:hover{
+    background-color: green;
+    color: white;
+}
+.col{
+    float: left;
+    width: 33.33%;
+    padding: 8px;
+    box-sizing: border-box;
+
+}
+.price-box{
+    background: white;
+    color: #555;
+    list-style-type: none;
+    border: 1px solid #555;
+    margin: 0;
+    padding: 0;
+
+}
+
+.price-box:hover, .price-box.best{
+
+box-shadow: 0 10px 15px 0 #000;
+
+}
+
+.price-box .header{
+    background-color: #111;
+    color: #fff;
+    font-size: 25px;
+}
+
+.price-box li{
+    padding: 20px;
+   text-align: center;
+   border-bottom: 1px solid lightgray;
+}
+
+.price-box .emph{
+    background-color: lightgray;
+    font-size: 20px;
+}
+
+.button{
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.side{
+    flex: 25%;
+    background-color: black;
+    padding: 20px;
+    height: 50%;
+   
+}
+
+.main{
+    flex: 75%;
+    background-color: white;
+    padding: 20px;
+    justify-content: center;
+}
+
+.side > h2{
+    border: 1px solid green;
+    background-color: green;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+   
+    
+}
+
+.side a{
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+.side ul{
+    list-style: none;
+    padding: 0;
+    margin: 0%;
+    text-align: center;
+    border: 1px solid black;
+    
+     
+    
+}
+.side li{
+    background-color: lightgreen;
+    padding: 10px;
+    border: 0.5px solid lightgreen;
+    border-width: 30px;
+    
+}
+.side ul :hover{
+   background-color: black;
+    color: white;
+
+}
+.about-us{
+    border: 1px solid black;
+   background-color:lightgray;
+   padding: 20px 20px;
+   margin: 50px 50px;
+}
+
+#about{
+    text-align: center;
+    color: #000;
+}
+#des{
+    color: #000;
+    text-align: center;
+}
+
+.content{
+    text-align: center;
+    font-weight: bold;
+}
+
+.members{
+   display: flex;
+   flex-direction: row;
+  
+}
+.members1{
+    
+    margin-top: 0px;
+    padding-top: 0px;
+    flex: 30%;
+    padding: 10px;
+    margin: 50px;
+    justify-content: center;
+}
+.mem{
+    margin-bottom: 0px;
+    color: black; 
+    text-align: center;
+}
+.profile-img{
+    height: 200px;
+    width: 200px;
+    
+    vertical-align: middle;
+}
+@media(max-width:900px){
+    .col{
+        width: 100%;
+    }
+}
+
