@@ -90,15 +90,12 @@ box-shadow: 0 10px 15px 0 #000;
 .row{
     display: flex;
     flex-direction: row;
-   
 }
 
 .side{
     flex: 25%;
     background-color: black;
     padding: 20px;
-    height: 50%;
-   
 }
 
 .main{
@@ -114,15 +111,11 @@ box-shadow: 0 10px 15px 0 #000;
     text-align: center;
     height: 40px;
     width: 100%;
-   
-    
 }
 
 .side a{
     text-decoration: none;
     color: white;
-    
-    
 }
 
 .side ul{
@@ -166,36 +159,82 @@ box-shadow: 0 10px 15px 0 #000;
 .content{
     text-align: center;
     font-weight: bold;
+    padding-top: 20px;
+    color: #000;
 }
 
-.members{
-   display: flex;
-   flex-direction: row;
-  
+.column {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+  }
+
+.row1{
+    margin: 0 -5px;
+    column-gap: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+
 }
-.members1{
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+img{
+    width: 100%; 
     
-    margin-top: 0px;
-    padding-top: 0px;
-    flex: 30%;
-    padding: 10px;
-    margin: 50px;
-    justify-content: center;
 }
-.mem{
-    margin-bottom: 0px;
-    color: black; 
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   margin-right: 10px;
     text-align: center;
+    background-color: white;
+    height: 50%;
+    border: 1px solid black;
 }
-.profile-img{
-    height: 200px;
-    width: 200px;
+.card:hover{
+    box-shadow: 0 10px 15px 0 #000;
+}
+.footer{
+    padding: 5px;
+    text-align: center;
+    background: lightgrey;
+    margin: 0;
+    color: #000;
+}
+@media screen and (max-width:900px){
+
+    .column{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
     
-    vertical-align: middle;
-}
-@media(max-width:900px){
     .col{
         width: 100%;
     }
+    img{
+        width: 100%;
+    }
+    .side {
+        display: block;
+        float: none;
+        width: 100%;
+        background-color: black;
+        padding: 20px;
+    }
+    .main{
+        background-color: white;
+        padding: 20px;
+        justify-content: center;
+    }
+
+   
 }
+
+
+
+
 
