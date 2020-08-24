@@ -1,9 +1,24 @@
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: white;
-    color: #fff;
     margin: 0;
     padding: 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "header header" "sidebar content";
+   
+}
+
+.top{
+    grid-area: header;
+}
+
+.side{
+    grid-area: sidebar;
+}
+
+.main{
+    grid-area: content;
 }
 
 .header1{
@@ -14,7 +29,6 @@ body{
     background-size: cover;
     background-position: center;
     color: white;
-    
 }
 
 .navbar{
@@ -31,21 +45,72 @@ body{
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
-   
-   
 }
 
 .navbar a:hover{
     background-color: green;
     color: white;
 }
-.col{
-    float: left;
-    width: 33.33%;
-    padding: 8px;
-    box-sizing: border-box;
+
+.side{
+    background-color: black;
+    padding: 30px;
+   
+}
+
+.side > h2{
+    border: 1px solid green;
+    background-color: green;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+}
+
+.side a{
+    text-decoration: none;
+    color: white;
+}
+
+.side ul{
+    list-style: none;
+    padding: 0;
+    margin: 0%;
+    text-align: center;
+    border: 1px solid black;
+}
+.side li{
+    background-color: lightgreen;
+    padding: 10px;
+    border: 0.5px solid lightgreen;
+    border-width: 30px;
+    
+}
+.side ul :hover{
+   background-color: black;
+    color: white;
 
 }
+
+.about-us{
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+    background: grey;
+    padding: 10px;
+    margin: 20px 20px;
+}
+
+.allignn{
+    display: flex;
+    flex-direction: row;
+    
+}
+.col{
+    flex: 33.33%;
+    padding: 8px;
+    border-style: border-box;
+}
+
 .price-box{
     background: white;
     color: #555;
@@ -53,15 +118,14 @@ body{
     border: 1px solid #555;
     margin: 0;
     padding: 0;
-
 }
+
 
 .price-box:hover, .price-box.best{
 
-box-shadow: 0 10px 15px 0 #000;
-
+    box-shadow: 0 10px 15px 0 #000;
+    
 }
-
 .price-box .header{
     background-color: #111;
     color: #fff;
@@ -87,100 +151,13 @@ box-shadow: 0 10px 15px 0 #000;
     text-decoration: none;
     font-size: 18px;
 }
-.row{
-    display: flex;
-    flex-direction: row;
-}
-
-.side{
-    flex: 25%;
-    background-color: black;
-    padding: 20px;
-}
-
-.main{
-    flex: 75%;
-    background-color: white;
-    padding: 20px;
-    justify-content: center;
-}
-
-.side > h2{
-    border: 1px solid green;
-    background-color: green;
-    text-align: center;
-    height: 40px;
-    width: 100%;
-}
-
-.side a{
-    text-decoration: none;
-    color: white;
-}
-
-.side ul{
-    list-style: none;
-    padding: 0;
-    margin: 0%;
-    text-align: center;
-    border: 1px solid black;
-    
-     
-    
-}
-.side li{
-    background-color: lightgreen;
-    padding: 10px;
-    border: 0.5px solid lightgreen;
-    border-width: 30px;
-    
-}
-.side ul :hover{
-   background-color: black;
-    color: white;
-
-}
-.about-us{
-    border: 1px solid black;
-   background-color:lightgray;
-   padding: 20px 20px;
-   margin: 50px 50px;
-}
-
-#about{
-    text-align: center;
-    color: #000;
-}
-#des{
-    color: #000;
-    text-align: center;
-}
-
-.content{
-    text-align: center;
-    font-weight: bold;
-    padding-top: 20px;
-    color: #000;
-}
-
-.column {
-    float: left;
-    width: 30%;
-    padding: 0 10px;
-  }
 
 .row1{
-    margin: 0 -5px;
-    column-gap: 10px;
-    padding: 8px;
-    box-sizing: border-box;
-
+    display: flex;
+    flex-direction: row;
+   
 }
-.row1:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+
 img{
     width: 100%; 
     
@@ -188,14 +165,11 @@ img{
 
 .card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-   margin-right: 10px;
+    margin-right: 10px;
     text-align: center;
     background-color: white;
-    height: 50%;
     border: 1px solid black;
-}
-.card:hover{
-    box-shadow: 0 10px 15px 0 #000;
+    margin: 10px;
 }
 .footer{
     padding: 5px;
@@ -204,37 +178,48 @@ img{
     margin: 0;
     color: #000;
 }
-@media screen and (max-width:900px){
 
-    .column{
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
+@media(max-width: 852px){
+    .allignn{
+        flex-direction: column;
     }
-    
-    .col{
-        width: 100%;
-    }
-    img{
-        width: 100%;
-    }
-    .side {
-        display: block;
-        float: none;
-        width: 100%;
-        background-color: black;
-        padding: 20px;
-    }
-    .main{
-        background-color: white;
-        padding: 20px;
-        justify-content: center;
+    .price-box{
+        width: 70%;
+        margin-left: 20%;
     }
 
-   
+    .row1{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 70%;
+        margin-left: 20%;
+    }
 }
 
+@media(max-width: 500px){
 
+   .grid{
+       display: block;
+   }
+    .allignn{
+        flex-direction: column;
+    }
 
+    .price-box{
+        width: 90%;
+        margin-left: 10px;
+    }
+
+    .row1{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 90%;
+        margin-left: 15px;
+    }
+}
 
 
