@@ -131,7 +131,7 @@ html, body {
 
 /* Small devices (landscape tablets, 768px and up) */
 
-@media (max-width: 767px) and (min-width: 500px) {
+@media (max-width: 767px) and (min-width: 550px) {
     .main {
         flex-direction: column;
     }
