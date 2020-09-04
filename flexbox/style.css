@@ -129,38 +129,11 @@ html, body {
 
 /*-------------------------------------------------- Media Queries ------------------------------------------------------------------------------ */
 
-@media (max-width: 549px) and (min-width: 500px) {
-    .main {
-        flex-direction: column;
-    }
-    .left-bar {
-       
-        border-radius: 0px 0px 0px 0px;
-    }
-    .right-bar {
-        border-radius: 0px 0px 0px 0px;
-    }
 
-    .marks-box {
-        flex-direction: column;
-    }
-
-    .marks {
-        flex-direction: column;
-        gap: 5px;
-    }
-    
-    .middle-content {
-        flex-direction: column;
-    }
-   
-
-    
-}
 
 /* Small devices (landscape tablets, 768px and up) */
 
-@media (max-width: 767px) and (min-width: 550px) {
+@media (max-width: 767px) and (min-width: 500px) {
     .main {
         flex-direction: column;
     }
