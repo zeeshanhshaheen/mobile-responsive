@@ -1,0 +1,206 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+   
+}
+
+.left-bar {
+   flex: 10%;
+    height: 100%;
+    background: blue;
+    
+}
+
+.center-part {
+    background: yellow;
+    flex: 70%;
+    height: 100%;
+}
+
+.right-bar {
+    background: red;
+    flex: 20%;
+    height: 100%;
+    
+}
+
+.row-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.title-2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.c-title {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 21px;
+    color: #53556C;
+}
+
+.stat {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 16px;
+    color: #A8A9B5;
+}
+
+.marks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+.marks-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 160px;
+    height: 71px;
+    background: #F9F9F9;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.marks-no {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FF8F00;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.remarks {
+    margin-left: 10px;
+    margin-top: 35px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #B9B9C2;
+}
+
+.box-2 {
+    width: 200px;
+}
+
+.box-3>h2 {
+    margin-left: 40px;
+}
+
+.box-3>p {
+    text-align: center;
+}
+
+.starting-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.md-1 {
+    flex: 40%;
+}
+
+.md-2 {
+    flex: 40%;
+}
+
+/*-------------------------------------------------- Media Queries ------------------------------------------------------------------------------ */
+
+/* Small devices (landscape tablets, 768px and up) */
+
+@media (max-width: 767px) and (min-width: 500px) {
+    .main {
+        flex-direction: column;
+    }
+    .left-bar {
+       
+        border-radius: 0px 0px 0px 0px;
+    }
+    .right-bar {
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .marks-box {
+        flex-direction: column;
+    }
+
+    .marks {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .middle-content {
+        flex-direction: column;
+    }
+   
+
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+    .left-bar {
+        border-radius: 0px 0px 0px 0px;
+    }
+    .right-bar {
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .marks-box {
+        flex-direction: column;
+    }
+
+    .marks {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .main {
+        flex-direction: column;
+    }
+    .left-bar {
+        border-radius: 0px 0px 0px 0px;
+    }
+    .right-bar {
+        border-radius: 0px 0px 0px 0px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .main {
+        flex-direction: row;
+    }
+}
