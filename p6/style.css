@@ -1,0 +1,69 @@
+.purple {
+    background-color: purple;
+}
+
+.green {
+    background-color: green;
+    height: 300px;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green-2 {
+    background-color: green;
+}
+
+.flex-item-main, .flex-item-side {
+    font-size: 18px;
+    color: white;
+    border: 2px solid black;
+}
+
+.flex-container-wrap {
+    display: flex;
+}
+
+.flex-container-sidebar {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    flex-grow: 1;
+}
+
+.flex-container-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-item-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    min-height: 200px;
+}
+
+.flex-item-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+    .flex-container-wrap {
+        flex-direction: column;
+    }
+    .flex-container-sidebar {
+        flex-direction: row;
+    }
+}
