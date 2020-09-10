@@ -8,7 +8,6 @@ body {
     padding: 0;
 }
 
-
 .navbar {
     padding: 30px;
     padding-left: 60px;
@@ -248,8 +247,6 @@ a {
     padding-top: 50px;
 }
 
-
-
 .end-part {
     margin: 100px;
     padding: 100px;
@@ -424,9 +421,8 @@ footer>p {
         flex-direction: column;
         justify-content: space-evenly;
     }
-
     .men-image {
-        align-content: initial;;
+        align-content: initial;
     }
 }
 
@@ -505,6 +501,9 @@ footer>p {
         flex-direction: column;
         justify-content: space-evenly;
     }
+    .men-image {
+        align-content: initial;
+    }
 }
 
 @media (max-width: 767px) and (min-width: 500px) {
@@ -581,6 +580,9 @@ footer>p {
     .privacy {
         flex-direction: column;
         justify-content: space-evenly;
+    }
+    .men-image {
+        align-content: initial;
     }
 }
 
