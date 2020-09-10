@@ -248,6 +248,8 @@ a {
     padding-top: 50px;
 }
 
+
+
 .end-part {
     margin: 100px;
     padding: 100px;
@@ -421,6 +423,10 @@ footer>p {
     .privacy {
         flex-direction: column;
         justify-content: space-evenly;
+    }
+
+    .men-image {
+        align-content: initial;;
     }
 }
 
