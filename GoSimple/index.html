@@ -13,21 +13,20 @@
 
 <body>
     <div class="wrapper">
-        <div class="navbar topnav" id="myTopnav">
-            <div class="left-options" >
-                <a href="">For Women</a>
-                <a href="">For Men</a>
-                <a href="">Incrediants</a>
-            </div>
-            <div class="logo">
-                <i class="fas fa-leaf"> <span class="logo-text"> GoSimple</span></i>
-            </div>
-            <div class="right-options">
-                <a href="">About</a>
-                <a href="">FAQ</a>
-                <a href="">Login</a>
-                <i class="fas fa-shopping-cart"></i>
-            </div>
+
+        <div class="topnav" id="myTopnav">
+
+            <a href="#home">For Women</a>
+            <a href="#news">For Men</a>
+            <a href="#contact">Incrediants</a>
+            <a href="" class="leaf-logo"> <i class="fas fa-leaf"> <span class="logo-text"> GoSimple</span></i></a>
+            <a href="#about">About</a>
+            <a href="#home">FAQ</a>
+            <a href="#news">Login</a>
+            <a href=""><i class="fas fa-shopping-cart"></i></i></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
 
         <div class="container">
@@ -143,7 +142,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="images">
+                    <div class="images men-image">
                         <img src="men.jpg" alt="men">
                     </div>
                 </div>
@@ -182,6 +181,17 @@
             <p>Made in USA</p>
         </footer>
     </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>
