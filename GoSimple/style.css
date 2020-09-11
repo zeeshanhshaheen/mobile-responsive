@@ -399,7 +399,7 @@ footer>p {
         display: none;
     }
     .header {
-        width: 300px;
+        
     }
     .header h1 {
        
@@ -424,7 +424,7 @@ footer>p {
         flex-wrap: wrap;
     }
     .images {
-        width: 300px;
+        width: 100px;
     }
     .end-part {
         margin: 20px;
